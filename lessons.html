@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Music Magic-Lessons</title>
+		<link rel="stylesheet" href="lessons_style.css">
+		<link rel="shortcut icon" href="images/icon.png">
+		<script>
+			function find() {
+				var skill=document.getElementById("skill").value;
+				var instrument=document.getElementById("instrument").value;
+				
+				if (instrument=="Guitar/Bass"){
+					instructor="Jesse Samson";
+				}
+				
+				if (instrument=="Violin/Cello"){
+					instructor="Lena Thomas";
+				}
+				
+				if (instrument=="Trumpet"){
+					instructor="Alex Johnson";
+				}
+				
+				if (instrument=="Flute"){
+					instructor="Kate Holden";
+				}
+				
+				if (instrument=="French Horn/Tuba"){
+					if (skill=="Beginner" || skill=="Intermediate"){
+						instructor="James Conwin";}
+					else{
+						instructor="Kevin Conwin";}
+				}
+				
+				if (instrument=="Clarinet/Oboe"){
+					if (skill=="Beginner" || skill=="Intermediate"){
+						instructor="Taylor Arlen";}
+					else{
+						instructor="Suzanne Holmes";}
+				}
+				
+				document.getElementById("instructor").innerHTML=instructor+"! ";
+				var y="Learn More"; var x=y.link("#");
+				document.getElementById("link").innerHTML=x;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="head">
+				<img src="images/logo.svg" alt="logo">
+				<h1>Music Magic</h1>
+			</div>
+			
+			<input type="search" placeholder="Search Lessons">
+			
+			<nav>
+				<ul>
+					<li>: <a href="home.html">Home</a> :</li>
+					<li>: <a href="products.html">Products</a> :</li>
+					<li>: <a href="lessons.html">Lessons</a> :</li>
+					<li>: <a href="about.html">About</a> :</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="logo">
+				<img src="images/logo.svg" alt="<3">
+				<h2>Sign up for a lesson!</h2>
+				<img src="images/logo.svg" alt="<3">
+			</div>
+			
+			<div class="content">
+				<div class="select">
+					<h3>By Skill Level</h3>
+					<ol>
+						<li><a href="">Beginner</a></li>
+						<li><a href="">Intermediate</a></li> 
+						<li><a href="">Expert</a></li>
+					</ol>
+				</div>
+				
+				<div class="select">
+					<h3>By Instrument</h3>
+					<ol>
+						<li><a href="">Violin/Cello</a></li> 
+						<li><a href="">Guitar/Bass</a></li>
+						<li><a href="">French Horn/Tuba</a></li> 
+						<li><a href="">Trumpet</a></li> 
+						<li><a href="">Clarinet/Oboe</a></li> 
+						<li><a href="">Flute</a></li>
+					</ol>
+				</div>
+				
+				<div>
+				<!--Apply JavaScript to find different instructors based on instrument and skill level-->
+					<h3>Find an Instructor</h3>
+					<form>
+						<fieldset>
+							Skill Level: 
+							<select id="skill">
+								<option value="Beginner">Beginner</option>
+								<option value="Intermediate">Intermediate</option>
+								<option value="Expert">Expert</option>
+							</select>
+						</fieldset>
+						
+						<fieldset>
+							Instrument: 
+							<select id="instrument">
+								<option value="Violin/Cello">Violin/Cello</option>
+								<option value="Guitar/Bass">Guitar/Bass</option>
+								<option value="French Horn/Tuba">French Horn/Tuba</option>
+								<option value="Trumpet">Trumpet</option>
+								<option value="Clarinet/Oboe">Clarinet/Oboe</option>
+								<option value="Flute">Flute</option>
+							</select>
+						</fieldset>
+						
+						<button type="button" onclick="find()">Find an Instructor!</button>
+					
+						<p>You got... <span id="instructor"></span><span id="link"></span></p>
+					</form>
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			Copyright Music Magic 2017. &copy; All rights reserved.
+		</footer>
+	</body>
+</html>
+			

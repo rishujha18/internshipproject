@@ -1,0 +1,172 @@
+/*Code for every page*/
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Pacifico');
+
+html {
+	background-image: url("images/background.jpg");
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+}
+
+body {
+	background-color: #FFFFFF;
+	margin: 100px;
+}
+
+header {
+	background-color: #CCFFFF;
+}
+
+img[alt="logo"] {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 25px;
+}
+
+h1 {
+	float: left;
+	color: #cc4e02;
+	font-family: 'Pacifico', cursive;
+	font-size: 72px;
+	margin-bottom: 25px;
+}
+
+.head {
+	position: absolute;
+	top: 80px;
+	left: 150px;
+}
+
+input[type="search"] {
+	float: right;
+	clear: right;
+	width: 30%;
+	height: 40px;
+	margin: 85px 50px 0 0;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: Gold;
+}
+
+input[type="search"]::placeholder {
+	color: Black;
+}
+
+/*Style the navigation bar*/
+ul {
+	position: relative;
+	top: 80px;
+	background-color: Gold;
+	margin-bottom: 100px;
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: space-around;
+	width: 97.7%;
+}
+
+li {
+	list-style: none;
+	display: inline;
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 15px 10px 15px 0;
+	border-left: 10px double Black;
+	border-right: 10px double Black;
+}
+
+li a {
+	text-decoration: none;
+	color: #092169;
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+li a:hover {
+	color: #cc4e02;
+}
+
+main, footer {
+	background-color: White;
+}
+
+.content {
+	background: repeating-linear-gradient(#eaf9ff 10%, #BDEDFF 20%, #eaf9ff 30%);
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	margin: 25px 25% 0 25%;
+	height: 20px;
+	width: 95%;
+	padding: 5px;
+}
+
+/*Begin unique code*/
+img[alt="<3"] {
+	width: 75px;
+	height: 75px;
+	vertical-align: bottom;
+}
+
+.logo {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	padding: 10px;
+	margin: 20px 0 0 0;
+}
+
+/*Float the paragraphs and 'John Doe' to the left of the cello image*/
+.content {
+	float: left;
+	width: 75%;
+	margin: 0 25px 25px 25px;
+	position: absolute;
+	z-index: 0;
+}
+
+/*Style the image of 'John Doe'*/
+img[alt="John Doe"] {
+	width: 250px;
+	display: inline;
+	float: left;
+	border: 1px solid Black;
+	margin: 15px;
+}
+
+/*Style the cello image*/
+img[alt="Cello"] {
+	width: 23%;
+	float: right;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+}
+
+p {
+	font-size: 18px;
+	font-family: 'Helvetica', sans-serif;
+	padding-left: 15px;
+	margin-right: 10%;
+}
+
+.one::first-letter {
+	font-family: 'Great Vibes', cursive;
+	font-size: 72px;
+}
+
+footer {
+	position: relative;
+	margin-top: 45%;
+	right: 23%;
+}
